@@ -5,6 +5,7 @@
   @include heading-font;
   .navbar-brand {
     color: $white;
+    font-size: 1.1rem;
   }
   .navbar-nav {
     margin-top: 1rem;
@@ -38,7 +39,7 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     .navbar-brand {
-      font-size: 2em;
+      font-size: 1.8em;
       -webkit-transition: font-size 0.3s;
       -moz-transition: font-size 0.3s;
       transition: font-size 0.3s;
@@ -61,7 +62,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     .navbar-brand {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
 }

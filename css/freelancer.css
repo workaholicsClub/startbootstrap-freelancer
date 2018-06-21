@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato';
+  /*font-family: 'Lato';*/
 }
 
 h1,
@@ -94,6 +94,15 @@ section h2 {
   line-height: 3.1rem;
 }
 
+.lead-container {
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+.lead-container h2 {
+  text-align: center;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -103,6 +112,7 @@ section h2 {
 
 #mainNav .navbar-brand {
   color: #fff;
+  font-size: 1.1rem;
 }
 
 #mainNav .navbar-nav {
@@ -140,7 +150,7 @@ section h2 {
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 2em;
+    font-size: 1.8em;
     -webkit-transition: font-size 0.3s;
     -moz-transition: font-size 0.3s;
     transition: font-size 0.3s;
@@ -161,13 +171,17 @@ section h2 {
     padding-bottom: 0.5rem;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 
 header.masthead {
   padding-top: calc(6rem + 72px);
   padding-bottom: 6rem;
+  /*p, ul, li {
+    font-size: 1.3rem;
+    @include body-font;
+  }*/
 }
 
 header.masthead h1 {
@@ -177,7 +191,7 @@ header.masthead h1 {
 
 header.masthead h2 {
   font-size: 1.3rem;
-  font-family: 'Lato';
+  /*font-family: 'Lato';*/
 }
 
 @media (min-width: 992px) {
@@ -285,6 +299,12 @@ header.masthead h2 {
   box-shadow: none !important;
 }
 
+.floating-label-form-group input::placeholder,
+.floating-label-form-group textarea::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
 .floating-label-form-group label {
   font-size: 0.85em;
   line-height: 1.764705882em;
@@ -313,11 +333,19 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: #fff;
 }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef;
+}
+
+#contact h2 {
+  line-height: 1em;
+}
+
+#contact .lead a {
+  text-decoration: underline;
 }
 
 .footer {

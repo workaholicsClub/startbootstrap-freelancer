@@ -14,6 +14,10 @@
     border-radius: 0;
     background: none;
     box-shadow: none !important;
+    &::placeholder {
+      color: $white;
+      opacity: 0.5;
+    }
   }
   label {
     font-size: 0.85em;
@@ -46,9 +50,21 @@
 
 .floating-label-form-group-with-focus {
   label {
-    color: $primary;
+    color: $white;
   }
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid $gray-200;
+}
+
+#contact {
+  h2 {
+    line-height: 1em;
+  }
+  
+  .lead {
+    a {
+      text-decoration: underline;
+    }
+  }
 }
