@@ -1,5 +1,5 @@
 body {
-  /*font-family: 'Lato';*/
+  font-family: 'Arsenal', sans-serif;
 }
 
 h1,
@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Alegreya', serif;
 }
 
 hr.star-light,
@@ -18,20 +18,9 @@ hr.star-dark {
   padding: 0;
   text-align: center;
   border: none;
-  border-top: solid 0.25rem;
+  border-top: solid 0.15rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-  font-family: FontAwesome;
-  font-size: 2em;
 }
 
 hr.star-light {
@@ -40,7 +29,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #18BC9C;
+  background-color: #13CAAC;
 }
 
 hr.star-dark {
@@ -103,11 +92,15 @@ section h2 {
   text-align: center;
 }
 
+.bg-primary-gradient {
+  background-image: linear-gradient(to right top, #00a3d8, #00afd6, #00b9cd, #00c2bf, #13caac);
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: 'Alegreya', serif;
 }
 
 #mainNav .navbar-brand {
@@ -125,7 +118,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #18BC9C;
+  color: #13CAAC;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -133,7 +126,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #18BC9C;
+  color: #13CAAC;
 }
 
 #mainNav .navbar-toggler {
@@ -160,11 +153,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #18BC9C;
+    background: #13CAAC;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #18BC9C;
+    background: #13CAAC;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -191,7 +184,7 @@ header.masthead h1 {
 
 header.masthead h2 {
   font-size: 1.3rem;
-  /*font-family: 'Lato';*/
+  font-family: 'Arsenal', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -200,8 +193,8 @@ header.masthead h2 {
     padding-bottom: 6rem;
   }
   header.masthead h1 {
-    font-size: 4.75em;
-    line-height: 4rem;
+    font-size: 3em;
+    line-height: 3rem;
   }
   header.masthead h2 {
     font-size: 1.75em;
@@ -224,7 +217,7 @@ header.masthead h2 {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
+  background-color: rgba(19, 202, 172, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -360,11 +353,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #18BC9C;
+  color: #13CAAC;
 }
 
 a:focus, a:hover, a:active {
-  color: #128f76;
+  color: #0f9b84;
 }
 
 .btn {
@@ -372,7 +365,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #18BC9C !important;
+  background-color: #13CAAC !important;
 }
 
 .bg-secondary {
@@ -380,7 +373,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #18BC9C !important;
+  color: #13CAAC !important;
 }
 
 .text-secondary {
@@ -388,13 +381,13 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #13CAAC;
+  border-color: #13CAAC;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #128f76;
-  border-color: #128f76;
+  background-color: #0f9b84;
+  border-color: #0f9b84;
 }
 
 .btn-secondary {
