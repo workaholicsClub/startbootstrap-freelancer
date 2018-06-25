@@ -1,11 +1,15 @@
 // Styling for the navbar
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
   @include heading-font;
+
+  .container {
+    align-items: start;
+  }
   .navbar-brand {
     color: $white;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .navbar-nav {
     margin-top: 1rem;
@@ -34,12 +38,12 @@
 @media(min-width:992px) {
   #mainNav {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     .navbar-brand {
-      font-size: 1.8em;
+      font-size: 1.2em;
       -webkit-transition: font-size 0.3s;
       -moz-transition: font-size 0.3s;
       transition: font-size 0.3s;
@@ -47,22 +51,51 @@
     .navbar-nav {
       margin-top: 0;
     }
+
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding-bottom: 2rem;
+    }
+
     .navbar-nav > li.nav-item > a.nav-link.active {
       color: $white;
-      background: $primary;
       &:active,
       &:focus,
       &:hover {
-        color: $white;
-        background: $primary;
+        color: $primary;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.5em solid $primary;
       }
     }
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
     .navbar-brand {
       font-size: 1.4em;
     }
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding-bottom: 1.5rem;
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link.active {
+      color: $white;
+      &:active,
+      &:focus,
+      &:hover {
+        color: $primary;
+        padding-bottom: 1rem;
+        border-bottom: 0.5em solid $primary;
+      }
+    }
   }
+}
+
+.navbar-brand {
+  p {
+    text-transform: capitalize;
+    small {
+      font-size: 50%;
+    }
+  }
+
 }

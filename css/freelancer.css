@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Alegreya', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 hr.star-light,
@@ -46,14 +46,14 @@ section {
 }
 
 section h2 {
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 @media (min-width: 992px) {
   section h2 {
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 2.45rem;
   }
 }
 
@@ -84,7 +84,7 @@ section h2 {
 }
 
 .lead-container {
-  text-align: justify;
+  text-align: left;
   font-size: 1.3em;
 }
 
@@ -97,15 +97,19 @@ section h2 {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
   font-weight: 700;
-  font-family: 'Alegreya', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#mainNav .container {
+  align-items: start;
 }
 
 #mainNav .navbar-brand {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 #mainNav .navbar-nav {
@@ -137,13 +141,13 @@ section h2 {
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.8em;
+    font-size: 1.2em;
     -webkit-transition: font-size 0.3s;
     -moz-transition: font-size 0.3s;
     transition: font-size 0.3s;
@@ -151,21 +155,43 @@ section h2 {
   #mainNav .navbar-nav {
     margin-top: 0;
   }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding-bottom: 2rem;
+  }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #13CAAC;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #13CAAC;
+    color: #13CAAC;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5em solid #13CAAC;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.4em;
   }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link {
+    padding-bottom: 1.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #13CAAC;
+    padding-bottom: 1rem;
+    border-bottom: 0.5em solid #13CAAC;
+  }
+}
+
+.navbar-brand p {
+  text-transform: capitalize;
+}
+
+.navbar-brand p small {
+  font-size: 50%;
 }
 
 header.masthead {
@@ -178,8 +204,8 @@ header.masthead {
 }
 
 header.masthead h1 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 header.masthead h2 {
@@ -193,8 +219,8 @@ header.masthead h2 {
     padding-bottom: 6rem;
   }
   header.masthead h1 {
-    font-size: 3em;
-    line-height: 3rem;
+    font-size: 2.5em;
+    line-height: 2.5rem;
   }
   header.masthead h2 {
     font-size: 1.75em;
@@ -260,6 +286,13 @@ header.masthead h2 {
 
 .portfolio-modal .portfolio-modal-dialog h2 {
   font-size: 2rem;
+}
+
+.portfolio-modal .portfolio-modal-dialog img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -334,7 +367,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 #contact h2 {
-  line-height: 1em;
+  line-height: 1.25em;
 }
 
 #contact .lead a {
